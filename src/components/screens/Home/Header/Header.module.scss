@@ -3,12 +3,7 @@
 	clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
 
 	.container {
-		@apply absolute h-full w-full;
-		background: linear-gradient(
-			90deg,
-			rgba(186, 133, 84, 0.7) 0%,
-			rgba(1, 1, 1, 0.7) 100%
-		);
+		@apply absolute h-full w-full bg-gradient-to-r from-ap-brown-light/70 to-ap-black/70;
 
 		.logo {
 			@apply absolute left-[3.125rem] top-[3.125rem];
@@ -18,7 +13,7 @@
 			@apply h-full flex flex-col gap-[3.125rem] justify-center items-center;
 
 			&_first {
-				@apply text-white w-full text-center;
+				@apply text-ap-white w-full text-center;
 
 				.title_first_main {
 					@apply block text-[3.125rem] font-bold tracking-[0.625rem] leading-[3.125rem] mb-[0.625rem];
@@ -30,7 +25,7 @@
 				}
 
 				.title_first_secondary {
-					@apply block text-white text-[1.5625rem] leading-[1.5625rem] tracking-[0.3125rem] font-thin;
+					@apply block text-ap-white text-[1.5625rem] leading-[1.5625rem] tracking-[0.3125rem] font-thin;
 
 					animation-name: rightToLeft;
 					animation-duration: 3s;

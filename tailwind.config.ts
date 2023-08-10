@@ -9,7 +9,11 @@ const config: Config = {
 	theme: {
 		extend: {
 			colors: {
-				'app-gray': '#777777',
+				'ap-gray': '#777777',
+				'ap-black': '#000000',
+				'ap-white': '#FAFAFA',
+				'ap-brown-light': '#BA8554',
+				'ap-brown-dark': '#A14F03',
 			},
 		},
 	},
