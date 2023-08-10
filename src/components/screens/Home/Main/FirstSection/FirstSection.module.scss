@@ -1,0 +1,19 @@
+.section {
+	@apply px-[6.250rem] pt-20 pb-[3.375rem];
+
+	.container {
+		@apply grid grid-cols-2 grid-rows-2 gap-[1.875rem];
+
+		.btn {
+			@apply font-bold border-b-2 text-ap-brown-light border-ap-brown-light p-[0.9375rem] w-max transition-all duration-300;
+
+			&:hover {
+				@apply bg-ap-brown-light text-ap-white translate-y-[-0.125rem];
+			}
+
+			&:active {
+				@apply translate-y-[0];
+			}
+		}
+	}
+}

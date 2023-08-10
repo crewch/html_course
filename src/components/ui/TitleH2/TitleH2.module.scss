@@ -1,0 +1,9 @@
+.title {
+	@apply text-4xl text-transparent tracking-[0.625rem] uppercase font-bold bg-gradient-to-r from-ap-brown-light to-ap-brown-dark bg-clip-text transition-all duration-[400ms] text-center pb-20;
+
+	backface-visibility: hidden;
+
+	&:hover {
+		@apply skew-y-2 skew-x-[15deg] scale-110;
+	}
+}

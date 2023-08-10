@@ -1,11 +1,13 @@
 import Header from '@/components/screens/Home/Header/Header'
 import styles from './Home.module.scss'
+import Main from './Main/Main'
 
 const Home = () => {
 	return (
-		<main className={styles.container}>
+		<div className={styles.container}>
 			<Header />
-		</main>
+			<Main />
+		</div>
 	)
 }
 

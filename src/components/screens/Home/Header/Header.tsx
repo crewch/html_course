@@ -2,7 +2,7 @@ import styles from './Header.module.scss'
 import Image from 'next/image'
 import HeaderImg from '/public/header-background.jpg'
 import IconLogo from '/public/Icon-logo.svg'
-import ButtonLink from '@/components/ui/ButtonLink'
+import ButtonLink from '@/components/ui/ButtonLink/ButtonLink'
 
 const Header = () => {
 	return (

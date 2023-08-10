@@ -1,0 +1,25 @@
+.composition {
+	@apply row-span-2 relative h-[22.75rem];
+
+	.photo {
+		@apply w-[41%] shadow-md absolute rounded-lg transition-all outline-offset-[0.0625rem];
+
+		&_1 {
+			@apply top-0 left-20 z-10;
+		}
+		&_2 {
+			@apply top-20 right-32 z-20;
+		}
+		&_3 {
+			@apply bottom-0 left-28 z-30;
+		}
+
+		&:hover {
+			@apply z-50 scale-150 outline outline-[0.625rem] outline-ap-brown-light;
+		}
+	}
+
+	&:hover .photo:not(:hover) {
+		@apply scale-95;
+	}
+}

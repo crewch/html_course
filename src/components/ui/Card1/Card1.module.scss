@@ -1,0 +1,11 @@
+.card {
+	@apply flex flex-col gap-[0.625rem];
+
+	.title {
+		@apply text-xl font-bold uppercase;
+	}
+
+	.text {
+		@apply text-base font-normal;
+	}
+}
