@@ -1,0 +1,88 @@
+.header {
+	@apply h-[95vh] relative;
+	clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
+
+	.container {
+		@apply absolute h-full w-full;
+		background: linear-gradient(
+			90deg,
+			rgba(186, 133, 84, 0.7) 0%,
+			rgba(1, 1, 1, 0.7) 100%
+		);
+
+		.logo {
+			@apply absolute left-[3.125rem] top-[3.125rem];
+		}
+
+		&_title {
+			@apply h-full flex flex-col gap-[3.125rem] justify-center items-center;
+
+			&_first {
+				@apply text-white w-full text-center;
+
+				.title_first_main {
+					@apply block text-[3.125rem] font-bold tracking-[0.625rem] leading-[3.125rem] mb-[0.625rem];
+					animation-name: leftToRight;
+					animation-duration: 3s;
+					animation-delay: 1s;
+					animation-timing-function: ease;
+					backface-visibility: hidden;
+				}
+
+				.title_first_secondary {
+					@apply block text-white text-[1.5625rem] leading-[1.5625rem] tracking-[0.3125rem] font-thin;
+
+					animation-name: rightToLeft;
+					animation-duration: 3s;
+					animation-delay: 1s;
+					animation-timing-function: ease;
+					backface-visibility: hidden;
+				}
+			}
+
+			.btn_animated {
+				animation-name: bottomToTop;
+				animation-duration: 1s;
+				animation-timing-function: ease-out;
+				animation-delay: 0.7s;
+				animation-fill-mode: backwards;
+			}
+		}
+	}
+}
+
+@keyframes leftToRight {
+	0% {
+		@apply opacity-0;
+		transform: translateX(-6.25rem);
+	}
+	80% {
+		transform: translateX(0.625rem);
+	}
+	100% {
+		@apply opacity-100;
+	}
+}
+
+@keyframes rightToLeft {
+	0% {
+		@apply opacity-0;
+		transform: translateX(6.25rem);
+	}
+	80% {
+		transform: translateX(-0.625rem);
+	}
+	100% {
+		@apply opacity-100;
+	}
+}
+
+@keyframes bottomToTop {
+	0% {
+		@apply opacity-0;
+		transform: translateY(3.125rem);
+	}
+	100% {
+		@apply opacity-100;
+	}
+}

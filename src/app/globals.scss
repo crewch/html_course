@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+::after,
+::before {
+	@apply m-0 p-0 box-border;
+}
+
+html {
+	@apply scroll-smooth;
+}
+
+body {
+	@apply font-normal text-app-gray tracking-[0.125rem] overflow-x-hidden;
+}

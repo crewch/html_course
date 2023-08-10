@@ -1,0 +1,25 @@
+.btn {
+	@apply uppercase no-underline bg-white rounded-[3.125rem] py-[0.9375rem] px-10 transition-all relative text-[1.25rem];
+
+	&:hover {
+		@apply translate-y-[-0.25rem];
+		box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.3);
+
+		&::after {
+			@apply opacity-0;
+			transform: scaleX(1.6) scaleY(1.7);
+		}
+	}
+
+	&:active {
+		@apply translate-y-[-0.125rem];
+		box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
+	}
+
+	&::after {
+		content: '';
+		@apply bg-white w-full h-full rounded-[3.125rem] absolute top-0 left-0 -z-10;
+
+		transition: all 0.4s;
+	}
+}
