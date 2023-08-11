@@ -1,5 +1,5 @@
 .btn {
-	@apply uppercase no-underline bg-ap-white rounded-[3.125rem] py-[0.9375rem] px-10 transition-all relative text-[1.25rem];
+	@apply uppercase no-underline bg-white rounded-[3.125rem] py-[0.9375rem] px-10 transition-all relative text-[1.25rem];
 
 	&:hover {
 		@apply translate-y-[-0.25rem] shadow-xl;

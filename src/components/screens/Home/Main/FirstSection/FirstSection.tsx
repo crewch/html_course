@@ -6,7 +6,7 @@ import CardImgs from './CardImgs/CardImgs'
 const FirstSection = () => {
 	return (
 		<section className={styles.section}>
-			<TitleH2 />
+			<TitleH2 title='НЕВЕРОЯТНОЕ ОЩУЩЕНИЕ СВОБОДЫ' />
 			<div className={styles.container}>
 				<Card1
 					title={'ПОЗВОЛЬТЕ СЕБЕ ПРИКЛЮЧЕНИЕ'}

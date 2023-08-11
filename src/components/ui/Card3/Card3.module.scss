@@ -1,0 +1,70 @@
+.card {
+	@apply h-[31.25rem] w-80 relative rounded;
+	perspective: 150rem;
+
+	.side {
+		@apply h-[31.25rem] w-80 transition-all duration-1000 absolute ease-in-out rounded shadow-lg;
+		backface-visibility: hidden;
+
+		&Face {
+			@apply bg-white;
+
+			.bg {
+				@apply h-[14.34rem] bg-ap-brown-light/50 absolute w-full z-10 rounded;
+				clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
+			}
+
+			.img {
+				@apply absolute rounded;
+				clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
+			}
+
+			.container {
+				@apply h-[14.34rem] w-full relative mb-10;
+
+				.title {
+					@apply text-white text-[1.75rem] uppercase absolute -bottom-2 right-0 text-right z-20;
+
+					.span {
+						@apply bg-gradient-to-r from-ap-brown-light to-ap-brown-dark px-5 pt-[0.625rem] pb-2;
+					}
+
+					.span2 {
+						@apply relative top-2 right-0;
+					}
+				}
+			}
+
+			.list {
+				.listItem {
+					@apply font-bold underline text-center;
+
+					&:not(:last-child) {
+						@apply mb-5;
+					}
+				}
+			}
+		}
+
+		&Back {
+			@apply bg-gradient-to-br from-ap-brown-light to-ap-brown-dark flex flex-col justify-center items-center gap-[5.438rem];
+			transform: rotateY(180deg);
+
+			.title {
+				@apply text-white;
+			}
+
+			.price {
+				@apply text-white text-6xl font-medium;
+			}
+		}
+	}
+
+	&:hover .sideFace {
+		transform: rotateY(-180deg);
+	}
+
+	&:hover .sideBack {
+		transform: rotateY(0deg);
+	}
+}

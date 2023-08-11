@@ -1,0 +1,19 @@
+.card {
+	@apply flex flex-col gap-[0.625rem] bg-ap-white/80 shadow-md rounded-[0.313rem] max-w-[15rem] p-[1.563rem] pb-[1.813rem] transition-all;
+
+	&:hover {
+		@apply scale-125;
+	}
+
+	.img {
+		@apply self-center pb-[0.875rem];
+	}
+
+	.title {
+		@apply text-xl font-bold text-center;
+	}
+
+	.text {
+		@apply text-center;
+	}
+}
