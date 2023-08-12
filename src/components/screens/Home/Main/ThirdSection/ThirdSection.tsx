@@ -9,7 +9,7 @@ import CardImg6 from '/public/cardImg6.jpg'
 const ThirdSection = () => {
 	return (
 		<section className={styles.section}>
-			<TitleH2 title='НАИБОЛЕЕ ПОПУЛЯРНЫЕ ТУРЫ' />
+			<TitleH2 className='text-center mb-20'>НАИБОЛЕЕ ПОПУЛЯРНЫЕ ТУРЫ</TitleH2>
 			<div className={styles.container}>
 				<Card3
 					Img={CardImg4}

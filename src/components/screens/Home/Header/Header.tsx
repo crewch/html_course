@@ -7,6 +7,42 @@ import ButtonLink from '@/components/ui/ButtonLink/ButtonLink'
 const Header = () => {
 	return (
 		<header className={styles.header}>
+			<div className={styles.navigation}>
+				<input type='checkbox' id='navMenu' className={styles.checkbox} />
+				<label htmlFor='navMenu' className={styles.label}>
+					<span className={styles.icon}></span>
+				</label>
+				<div className={styles.navBg}></div>
+				<nav className={styles.nav}>
+					<ul className={styles.list}>
+						<li className={styles.listItem}>
+							<a href='#' className={styles.link}>
+								О НАС
+							</a>
+						</li>
+						<li className={styles.listItem}>
+							<a href='#' className={styles.link}>
+								СКИДКИ
+							</a>
+						</li>
+						<li className={styles.listItem}>
+							<a href='#' className={styles.link}>
+								ЛУЧШИЕ ТУРЫ
+							</a>
+						</li>
+						<li className={styles.listItem}>
+							<a href='#' className={styles.link}>
+								КАЛЬКУЛЯТОР ЦЕНЫ
+							</a>
+						</li>
+						<li className={styles.listItem}>
+							<a href='#' className={styles.link}>
+								СВЯЗАТЬСЯ С НАМИ
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
 			<Image
 				src={HeaderImg}
 				alt='Balloons'
@@ -16,6 +52,7 @@ const Header = () => {
 				style={{
 					objectFit: 'cover',
 				}}
+				className={styles.bgImg}
 			/>
 			<div className={styles.container}>
 				<Image

@@ -3,12 +3,12 @@ import styles from './TitleH2.module.scss'
 import classNames from 'classnames'
 
 interface TitleH2Props {
-	title: string
+	children: string
 	color?: string
 	className?: string
 }
 
-const TitleH2: FC<TitleH2Props> = ({ title, color, className }) => {
+const TitleH2: FC<TitleH2Props> = ({ children, color, className }) => {
 	return (
 		<h2
 			className={classNames(
@@ -17,7 +17,7 @@ const TitleH2: FC<TitleH2Props> = ({ title, color, className }) => {
 				className
 			)}
 		>
-			{title}
+			{children}
 		</h2>
 	)
 }

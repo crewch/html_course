@@ -1,12 +1,115 @@
 .header {
 	@apply h-[95vh] relative;
-	clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
+
+	.navigation {
+		@apply absolute z-10;
+
+		.checkbox {
+			@apply hidden;
+		}
+
+		.checkbox:checked ~ .navBg {
+			@apply scale-[80];
+		}
+
+		.checkbox:checked ~ .nav {
+			@apply w-full opacity-100;
+		}
+
+		.checkbox:checked ~ .label .icon {
+			@apply bg-transparent;
+		}
+
+		.checkbox:checked ~ .label .icon::after {
+			@apply rotate-45 top-0;
+		}
+
+		.checkbox:checked ~ .label .icon::before {
+			@apply -rotate-45 top-0;
+		}
+
+		.label {
+			@apply bg-ap-white h-16 w-16 rounded-full fixed right-[6.25rem] top-[6.25rem] z-[52] flex justify-center items-center cursor-pointer;
+
+			.icon {
+				@apply relative;
+
+				&,
+				&::after,
+				&::before {
+					@apply w-[30px] h-[2px] bg-ap-black inline-block transition-all duration-200;
+				}
+
+				&::after,
+				&::before {
+					content: '';
+					@apply absolute left-0;
+				}
+
+				&::after {
+					@apply top-[8px];
+				}
+				&::before {
+					@apply top-[-8px];
+				}
+			}
+
+			&:hover .icon::before {
+				@apply top-[-10px];
+			}
+
+			&:hover .icon::after {
+				@apply top-[10px];
+			}
+		}
+
+		.navBg {
+			@apply h-14 w-14 rounded-full bg-gradient-radial from-ap-brown-light to-ap-brown-dark fixed right-[6.55rem] 
+			top-[6.55rem] z-50 transition-all duration-700;
+		}
+
+		.nav {
+			@apply h-screen fixed top-0 right-0 z-[51] opacity-0 w-0 transition-all duration-700;
+
+			.list {
+				@apply h-full flex flex-col justify-center gap-[3.75rem] items-center;
+
+				.listItem {
+					@apply text-ap-white text-[2.5rem];
+
+					.link {
+						@apply py-3 px-5 transition-all duration-500 inline-block;
+						background: linear-gradient(
+							120deg,
+							transparent 0%,
+							transparent 50%,
+							white 50%
+						);
+
+						background-size: 250%;
+
+						&:hover {
+							@apply text-ap-brown-dark translate-x-3;
+
+							background-position: 100%;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.bgImg {
+		clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
+	}
 
 	.container {
 		@apply absolute h-full w-full bg-gradient-to-r from-ap-brown-light/70 to-ap-black/70;
+		clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
 
 		.logo {
 			@apply absolute left-[3.125rem] top-[3.125rem];
+			clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
 		}
 
 		&_title {

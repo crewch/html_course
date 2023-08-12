@@ -5,17 +5,17 @@
 		@apply w-[41%] shadow-md absolute rounded-lg transition-all outline-offset-[0.0625rem];
 
 		&_1 {
-			@apply top-0 left-20 z-10;
+			@apply top-0 left-20 z-[1];
 		}
 		&_2 {
-			@apply top-20 right-32 z-20;
+			@apply top-20 right-32 z-[2];
 		}
 		&_3 {
-			@apply bottom-0 left-28 z-30;
+			@apply bottom-0 left-28 z-[3];
 		}
 
 		&:hover {
-			@apply z-50 scale-150 outline outline-[0.625rem] outline-ap-brown-light;
+			@apply z-40 scale-150 outline outline-[0.625rem] outline-ap-brown-light;
 		}
 	}
 

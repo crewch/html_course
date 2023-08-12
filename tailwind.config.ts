@@ -10,10 +10,16 @@ const config: Config = {
 		extend: {
 			colors: {
 				'ap-gray': '#777777',
+				'ap-gray-dark': '#333333',
 				'ap-black': '#000000',
 				'ap-white': '#FAFAFA',
 				'ap-brown-light': '#BA8554',
 				'ap-brown-dark': '#A14F03',
+				'ap-green-light': '#66D763',
+				'ap-red-light': '#D76363',
+			},
+			backgroundImage: {
+				'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
 			},
 		},
 	},

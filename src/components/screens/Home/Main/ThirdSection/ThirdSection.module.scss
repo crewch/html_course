@@ -1,5 +1,5 @@
 .section {
-	@apply mt-16 flex flex-col items-center pb-[5.313rem] px-[6.563rem];
+	@apply flex flex-col items-center pt-16 pb-[5.313rem] px-[6.563rem];
 
 	.container {
 		@apply mb-20 grid grid-rows-1 grid-cols-3 gap-[3.75rem];

@@ -7,8 +7,15 @@ import ButtonLink from '@/components/ui/ButtonLink/ButtonLink'
 
 const FourthSection = () => {
 	return (
-		<section>
-			<TitleH2 title='ОТЗЫВЫ НАШИХ КЛИЕНТОВ' color='text-white' />
+		<section className={styles.section}>
+			<video className={styles.video} autoPlay muted loop>
+				<source src='/HotAirBalloons.mp4' />
+				<source src='/HotAirBalloons.webm' />
+			</video>
+			<div className={styles.bg} />
+			<TitleH2 color='text-white' className='relative pt-20 text-center mb-20'>
+				ОТЗЫВЫ НАШИХ КЛИЕНТОВ
+			</TitleH2>
 			<div className={styles.cards}>
 				<Card4
 					Img={feedBackImg2}
