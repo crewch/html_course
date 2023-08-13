@@ -21,6 +21,7 @@ const config: Config = {
 			backgroundImage: {
 				'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
 			},
+			screens: { '3xl': '2000px' },
 		},
 	},
 	plugins: [],

@@ -9,11 +9,12 @@
 		}
 
 		.checkbox:checked ~ .navBg {
-			@apply scale-[80];
+			@apply scale-[80] 3xl:scale-[180];
 		}
 
 		.checkbox:checked ~ .nav {
 			@apply w-full opacity-100;
+			visibility: visible;
 		}
 
 		.checkbox:checked ~ .label .icon {
@@ -37,7 +38,7 @@
 				&,
 				&::after,
 				&::before {
-					@apply w-[30px] h-[2px] bg-ap-black inline-block transition-all duration-200;
+					@apply w-[1.875rem] h-[1px] lg:h-[2px] bg-ap-black inline-block transition-all duration-200;
 				}
 
 				&::after,
@@ -47,19 +48,19 @@
 				}
 
 				&::after {
-					@apply top-[8px];
+					@apply top-[0.5rem];
 				}
 				&::before {
-					@apply top-[-8px];
+					@apply top-[-0.5rem];
 				}
 			}
 
 			&:hover .icon::before {
-				@apply top-[-10px];
+				@apply top-[-0.625rem];
 			}
 
 			&:hover .icon::after {
-				@apply top-[10px];
+				@apply top-[0.625rem];
 			}
 		}
 
@@ -70,6 +71,7 @@
 
 		.nav {
 			@apply h-screen fixed top-0 right-0 z-[51] opacity-0 w-0 transition-all duration-700;
+			visibility: hidden;
 
 			.list {
 				@apply h-full flex flex-col justify-center gap-[3.75rem] items-center;
