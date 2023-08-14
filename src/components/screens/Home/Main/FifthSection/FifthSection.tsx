@@ -39,32 +39,6 @@ const FifthSection = () => {
 								Ваш почтовый email
 							</label>
 						</div>
-						<div className={styles.radioGroup}>
-							<div className={styles.radioField}>
-								<input
-									type='radio'
-									id='radio1'
-									name='radio'
-									className={styles.radio}
-								/>
-								<label htmlFor='radio1' className={styles.labelRadio}>
-									<span className={styles.btnRadio} />
-									Групповой тур
-								</label>
-							</div>
-							<div className={styles.radioField}>
-								<input
-									type='radio'
-									id='radio2'
-									name='radio'
-									className={styles.radio}
-								/>
-								<label htmlFor='radio2' className={styles.labelRadio}>
-									<span className={styles.btnRadio} />
-									Индивидуальный тур
-								</label>
-							</div>
-						</div>
 						<ButtonLink href='#' className={styles.btn}>
 							ЗАБРОНИРОВАТЬ
 						</ButtonLink>

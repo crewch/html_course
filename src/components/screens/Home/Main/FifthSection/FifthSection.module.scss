@@ -53,35 +53,6 @@
 					}
 				}
 
-				.radioGroup {
-					@apply flex gap-6 w-1/2;
-
-					.radioField {
-						@apply flex gap-2;
-
-						.radio {
-							@apply hidden;
-						}
-
-						.radio:checked ~ .labelRadio .btnRadio::after {
-							@apply opacity-100;
-						}
-
-						.labelRadio {
-							@apply cursor-pointer relative pl-10;
-
-							.btnRadio {
-								@apply h-7 w-7 rounded-full border-4 border-ap-brown-dark block absolute left-0 -top-[0.1rem];
-
-								&::after {
-									content: '';
-									@apply block w-3 h-3 rounded-full bg-ap-brown-dark absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 transition-all;
-								}
-							}
-						}
-					}
-				}
-
 				.btn {
 					@apply mt-[1.875rem] inline-block bg-ap-brown-light text-white;
 

@@ -2,16 +2,16 @@
 	@apply max-sm:order-last sm:row-span-2 relative h-[22.75rem];
 
 	.photo {
-		@apply w-[41%] lg:w-[80%] xl:w-[60%] 2xl:w-[41%] shadow-md absolute rounded-lg transition-all outline-offset-[0.0625rem];
+		@apply w-[70%] xs:w-[40%] sm:w-[60%] lg:w-[80%] xl:w-[60%] 2xl:w-[41%] shadow-md absolute rounded-lg transition-all outline-offset-[0.0625rem];
 
 		&_1 {
-			@apply top-20 left-28 lg:top-0 lg:left-0 xl:top-4 xl:left-20 2xl:top-0 2xl:left-20 z-[1];
+			@apply top-1 left-1 xs:top-1 xs:left-28 sm:top-0 sm:left-20 lg:top-0 lg:left-0 xl:top-4 xl:left-20 2xl:top-0 2xl:left-20 z-[1];
 		}
 		&_2 {
-			@apply top-32 right-12 lg:top-28 lg:-right-20 xl:top-28 xl:right-0 2xl:top-20 2xl:right-32 z-[2];
+			@apply top-20 -right-20 xs:top-20 xs:right-32 sm:top-28 sm:-right-24 lg:top-28 lg:-right-20 xl:top-28 xl:right-0 2xl:top-20 2xl:right-32 z-[2];
 		}
 		&_3 {
-			@apply bottom-0 left-40 lg:-bottom-10 lg:left-10 xl:-bottom-10 xl:left-28 2xl:bottom-0 2xl:left-28 z-[3];
+			@apply -bottom-10 left-10 xs:bottom-1 xs:left-40 sm:-bottom-16 sm:left-32 lg:-bottom-10 lg:left-10 xl:-bottom-10 xl:left-28 2xl:bottom-0 2xl:left-28 z-[3];
 		}
 
 		&:hover {
