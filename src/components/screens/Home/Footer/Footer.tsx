@@ -14,6 +14,10 @@ const Footer = () => {
 						className={styles.img}
 						width={120}
 						height={150}
+						style={{
+							width: '10%',
+							height: 'auto',
+						}}
 					/>
 				</a>
 				<nav className={styles.nav}>

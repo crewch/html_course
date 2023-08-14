@@ -1,5 +1,5 @@
 .section {
-	@apply p-[6.25rem] bg-gradient-to-r from-ap-brown-light to-ap-brown-dark;
+	@apply sm:p-[6.25rem] bg-gradient-to-r from-ap-brown-light to-ap-brown-dark;
 
 	.container {
 		@apply h-[31.25rem] relative rounded shadow-lg;
@@ -21,7 +21,7 @@
 		}
 
 		.box {
-			@apply relative p-[3.125rem] h-full;
+			@apply relative p-4 sm:p-[3.125rem] h-full;
 
 			.form {
 				.formGroup {

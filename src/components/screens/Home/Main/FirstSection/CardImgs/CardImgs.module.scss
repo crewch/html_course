@@ -1,17 +1,17 @@
 .composition {
-	@apply row-span-2 relative h-[22.75rem];
+	@apply max-sm:order-last sm:row-span-2 relative h-[22.75rem];
 
 	.photo {
-		@apply w-[41%] shadow-md absolute rounded-lg transition-all outline-offset-[0.0625rem];
+		@apply w-[41%] lg:w-[80%] xl:w-[60%] 2xl:w-[41%] shadow-md absolute rounded-lg transition-all outline-offset-[0.0625rem];
 
 		&_1 {
-			@apply md:top-20 md:left-28 lg:top-20 lg:left-20 xl:top-16 xl:left-20 2xl:top-0 2xl:left-20 z-[1];
+			@apply top-20 left-28 lg:top-0 lg:left-0 xl:top-4 xl:left-20 2xl:top-0 2xl:left-20 z-[1];
 		}
 		&_2 {
-			@apply md:top-32 md:right-12 lg:top-28 lg:right-10 xl:top-28 xl:right-16 2xl:top-20 2xl:right-32 z-[2];
+			@apply top-32 right-12 lg:top-28 lg:-right-20 xl:top-28 xl:right-0 2xl:top-20 2xl:right-32 z-[2];
 		}
 		&_3 {
-			@apply md:bottom-0 md:left-40 lg:bottom-16 lg:left-28 xl:bottom-10 xl:left-28 2xl:bottom-0 2xl:left-28 z-[3];
+			@apply bottom-0 left-40 lg:-bottom-10 lg:left-10 xl:-bottom-10 xl:left-28 2xl:bottom-0 2xl:left-28 z-[3];
 		}
 
 		&:hover {

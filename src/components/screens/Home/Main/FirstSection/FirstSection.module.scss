@@ -2,7 +2,7 @@
 	@apply px-[6.250rem] pt-20 pb-[3.375rem];
 
 	.container {
-		@apply grid grid-cols-2 grid-rows-2 gap-[1.875rem];
+		@apply grid sm:grid-cols-2 sm:grid-rows-2 gap-[1.875rem];
 
 		.btn {
 			@apply font-bold border-b-2 text-ap-brown-light border-ap-brown-light p-[0.9375rem] w-max transition-all duration-300;

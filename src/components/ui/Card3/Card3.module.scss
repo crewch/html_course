@@ -1,16 +1,16 @@
 .card {
-	@apply h-[31.25rem] w-80 relative rounded;
+	@apply h-[50rem] sm:h-[31.25rem] w-full sm:w-80 relative rounded;
 	perspective: 150rem;
 
 	.side {
-		@apply h-[31.25rem] w-80 transition-all duration-1000 absolute ease-in-out rounded shadow-lg;
+		@apply h-[50rem] sm:h-[31.25rem] w-full sm:w-80 transition-all duration-1000 absolute ease-in-out rounded shadow-lg;
 		backface-visibility: hidden;
 
 		&Face {
-			@apply bg-white;
+			@apply bg-white flex flex-col;
 
 			.bg {
-				@apply h-[14.34rem] bg-ap-brown-light/50 absolute w-full z-10 rounded;
+				@apply h-[25.8rem] sm:h-[14.34rem] sm:bg-ap-brown-light/50 absolute w-full z-10 rounded;
 				clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
 			}
 
@@ -20,7 +20,7 @@
 			}
 
 			.container {
-				@apply h-[14.34rem] w-full relative mb-10;
+				@apply h-full sm:h-[14.34rem] w-full relative mb-10;
 
 				.title {
 					@apply text-white text-[1.75rem] uppercase absolute -bottom-2 right-0 text-right z-20;
@@ -36,8 +36,10 @@
 			}
 
 			.list {
+				@apply mt-auto sm:mt-0 mb-36 sm:mb-0;
+
 				.listItem {
-					@apply font-bold underline text-center;
+					@apply font-bold underline text-center text-xl sm:text-base;
 
 					&:not(:last-child) {
 						@apply mb-5;
